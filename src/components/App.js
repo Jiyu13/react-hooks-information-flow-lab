@@ -14,7 +14,7 @@ function App() {
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       
       {/* Deliverable 1: pass down state and callback that updates state to Header */}
-      <Header onChangeMode={onDarkModeClick} isDarkMode={isDarkMode}/>
+      <Header onDarkModeClick={onDarkModeClick} isDarkMode={isDarkMode}/>
       
       <ShoppingList items={itemData} />
     </div>
